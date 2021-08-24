@@ -45,3 +45,7 @@ console.log(`Lista de destinos ${listaDeDestinos}`);
 // console.log(idadeComprador <= 18);
 // console.log(idadeComprador >= 18);
 // console.log(idadeComprador == 18);
+
+
+
+

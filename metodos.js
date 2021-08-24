@@ -18,7 +18,7 @@ console.log(strCopy);
 
 
 
-//metodo trim -->> remove os espaços na string
+//metodo trim  -->> remove os espaços na string
 
 
 const greeting = '   Hello world!   ';
@@ -31,3 +31,16 @@ console.log(greeting.trim());
 
 String.prototype.trimStart()
 String.prototype.trimEnd()
+
+
+
+
+//metodo includes -->> verifica se a cadeia de caracteres existe ou não ná string
+// includes -->> case sensitive
+
+const sentence = 'The quick brown fox jumps over the lazy dog.';
+
+const word = 'breno';
+
+console.log(`The word "${word}" ${sentence.includes(word) ? 'is' : 'is not'} in the sentence`);
+// expected output: "The word "fox" is in the sentence"
