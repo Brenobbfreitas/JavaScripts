@@ -41,4 +41,4 @@ for(let i  = 0 ; i < 3 ; i++){
     if(listaDeDestinos[i] == destino){
         destinoExiste = true;
     }
-} // repetidor for
+} // repetidor for e como declar
