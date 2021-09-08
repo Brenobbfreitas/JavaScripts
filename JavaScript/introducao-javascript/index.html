@@ -12,12 +12,12 @@
 
 		<header>
 			<div class="container">
-				<h1>Aparecida Nutrição</h1>
+				<h1 class="titulo">Aparecida Nutrição</h1>
 			</div>
 		</header>
 		<main>
 			<section class="container">
-				<h2>Meus pacientes</h2>
+				<h2>Meus Clientes</h2>
 				<table>
 					<thead>
 						<tr>
@@ -72,6 +72,17 @@
 
 			</section>
 		</main>
+
+		<script>
+			//As funções devem estar dentro da tag script, para ser interpretada pelo navegador
+			//A função querySelector é utilizada para pegar os valores da tag e posteriormente manipula
+
+			var titulo = document.querySelector(".titulo")
+			console.log(titulo);
+			console.log(titulo.textContent);
+
+			titulo.textContent = "Aparecida Nutricionista";
+		</script>
 
 	</body>
 </html>
