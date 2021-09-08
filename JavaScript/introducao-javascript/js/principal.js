@@ -17,5 +17,6 @@
 
             var imc =  peso / (altura * altura);
 
+            //altera a dom(html da pagina)
             tdImc.textContent = imc
             //IMC VARIAVEL
