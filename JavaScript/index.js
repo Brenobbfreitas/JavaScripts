@@ -1,15 +1,32 @@
 class Cliente{
     nome;
     cpf;
-    agencia;
-    saldo;
 }
 
-const cliente1 = new Cliente();
+class ContaCorrente{
+    agencia;
+    saldo;
 
+    sacar(valor){
+        if (this.saldo >= valor){
+            this.saldo -= valor;
+        }
+    }
+
+}
+
+
+
+const cliente1 = new Cliente();
 cliente1.nome = "Ricardo";
 cliente1.cpf = "11122233309";
-cliente1.agencia = 1001;
-cliente1.saldo = 0;
+
+
+const ContaCorrenteRicardo = new ContaCorrente();
+ContaCorrenteRicardo.agencia = 1234;
+ContaCorrenteRicardo.saldo = 100;
+
+ContaCorrenteRicardo.sacar(200);
+console.log(ContaCorrenteRicardo.saldo)
 
 console.log(cliente1)
