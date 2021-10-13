@@ -26,3 +26,4 @@ const graphQL = new Livro("harry o Escritor", "FolhaSIO", 130);
 console.log(graphQL.gNome());
 console.log(graphQL.gEditora());
 console.log(graphQL.gPaginas());
+console.log(graphQL)
