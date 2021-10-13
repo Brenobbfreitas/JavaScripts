@@ -22,4 +22,10 @@ export class ContaCorrente{
             console.log(this._saldo);
     }
 
+    //recebendo um objeto como parametro
+    transferir(valor, conta){
+        const valorSacado = this.sacar(valor);
+        conta.depositar(valorSacado)
+    }
+
 }
