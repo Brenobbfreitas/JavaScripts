@@ -1,30 +1,7 @@
-//declarando uma classe, meu molde
-class Cliente{
-    nome;
-    cpf;
-    //rg;
-};
+import { Cliente } from "./Cliente.js";
+import { ContaCorrente } from "./Contacorrente.js";
+// importanto class cliente/ContaCorrente
 
-class ContaCorrente{
-    agencia;
-    // #saldo = 0 https://github.com/tc39/proposal-class-fields#private-fields
-    _saldo = 0;
-
-// metodo
-    sacar(valor){
-        if(this._saldo >= valor ){
-            this._saldo -= valor;
-        }
-    }
-// deposito
-    depositar(valor){
-        if(valor > 0){
-            this._saldo += valor;
-            console.log(this._saldo);
-        }
-    }
-
-}
 
 //cliente 1 e cliente 2 são objetos
 //new cliente eu estou criando uma instancia da minha classe
@@ -42,9 +19,11 @@ contaCorrenteRicardo.agencia = 1001;
 
 contaCorrenteRicardo.depositar(100);
 contaCorrenteRicardo.depositar(200);
-contaCorrenteRicardo.sacar(50);
 
 
+const valorSacado = contaCorrenteRicardo.sacar(50);
+
+console.log(valorSacado);
 
 console.log(contaCorrenteRicardo);
 

@@ -1,0 +1,14 @@
+{
+  "name": "bytebanck",
+  "version": "1.0.0",
+  "description": "Projeto do bytebanck para os clientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Breno",
+  "license": "ISC",
+  "type": "module"
+  
+}
