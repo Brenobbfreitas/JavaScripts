@@ -1,9 +1,5 @@
  //declarando uma classe, meu molde
 export class Cliente{
-    nome;
-    _cpf;
-    //rg;
-
 
 get cpf(){
     return this._cpf;
